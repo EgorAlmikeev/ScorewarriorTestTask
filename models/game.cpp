@@ -27,12 +27,11 @@ void Game::Start()
             if( current_command->mType == EngineCommand::Type::WAIT )
             {
                current_command_iter = mCommands.begin();
-               goto cnt;
+               break;
             }
          }
       }
 
-   cnt:
       ++mCurrentTickNumber;
    }
 
